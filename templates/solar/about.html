@@ -1,0 +1,158 @@
+{% extends "solar/base.html" %}
+{% load static %}
+{% block about %}
+  <div class="first">
+    <div id="image"></div>
+    <div class="about-company">
+      <p class="subtitle">| ABOUT COMPANY</p>
+      <h1 class="title">Innovating for a <br><span>Sustainable Future</span></h1>
+      <p class="description">
+        Rays of Progress & Solar Success serves as a powerful beacon, embodying the transformative journey
+        toward a future powered by the boundless Energy of the sun. It's a vision where each
+      </p>
+
+      <div class="card-container">
+        <div class="card">
+          <img src="{% static 'images/img/partner.png' %}" alt="">
+          <h3>Partner Awaits</h3>
+          <p>Harness the power of water with our AquaForce.</p>
+        </div>
+        <div class="card">
+          <img src="{% static 'images/img/global.png' %}" alt="">
+          <h3>Global Experts</h3>
+          <p>Wind turbines Powering a greener tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stats-section">
+    <div class="stat-box">
+      <img src="{% static 'images/img/projects.png' %}" alt="">
+      <h2>1.2k</h2>
+      <p>Project Success</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <img src="{% static 'images/img/clients.png' %}" alt="">
+      <h2>700+</h2>
+      <p>Clients Reviews</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <img src="{% static 'images/img/team.png' %}" alt="">
+      <h2>125+</h2>
+      <p>Team Members</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="stat-box">
+      <img src="{% static 'images/img/winning.png' %}" alt="">
+      <h2>91+</h2>
+      <p>Winning Awards</p>
+    </div>
+  </div>
+  <div class="second">
+    <div class="experience-section">
+      <p class="section-subtitle">| OUR EXPERIENCE</p>
+      <h2 class="section-title">Solar Passion<br>Unveiled Our Story</h2>
+      <p class="section-desc">
+        Business, or everyday living, imagine a world where solar success is
+        not just an aspiration but a reality driven by the Rays of the sun.
+      </p>
+
+      <div class="progress-bar-group">
+        <div class="progress-bar-item">
+          <span class="label">Hybrid Energy</span>
+          <span class="value">76%</span>
+          <div class="bar">
+            <div class="fill" style="width: 76%;"></div>
+          </div>
+        </div>
+
+        <div class="progress-bar-item">
+          <span class="label">Solar Panel</span>
+          <span class="value">85%</span>
+          <div class="bar">
+            <div class="fill" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="progress-bar-item">
+          <span class="label">Wind Turbines</span>
+          <span class="value">60%</span>
+          <div class="bar">
+            <div class="fill" style="width: 60%;"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="second-image">
+    </div>
+  </div>
+  <div class="team-section">
+    <p class="section-subtitle">| EXPERT MEMBER</p>
+    <h2 class="section-title">Solar Design Engineer</h2>
+
+    <div class="team-grid">
+      <!-- Member 1 -->
+      <div class="team-member">
+        <img src="https://slaze.nextwpcook.com/wp-content/uploads/2024/03/team-1.jpg" alt="Steve Rhodes">
+        <div class="member-info">
+          <i class="fa fa-share-alt"></i>
+          <h3>Steve Rhodes</h3>
+          <p>Senior Manager</p>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-member">
+        <img src="https://slaze.nextwpcook.com/wp-content/uploads/2024/03/team-3.jpg" alt="Engineer Woman">
+        <div class="member-info">
+          <i class="fa fa-share-alt"></i>
+          <h3>Lisa Thompson</h3>
+          <p>Senior Engineer</p>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="team-member">
+        <img src="https://slaze.nextwpcook.com/wp-content/uploads/2024/03/team-4.jpg" alt="Engineer Man">
+        <div class="member-info">
+          <i class="fa fa-share-alt"></i>
+          <h3>David Martinez</h3>
+          <p>Senior Technician</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="third">
+    <div id="third-image"></div>
+    <div class="consultation-section">
+      <div class="text-content">
+        <p class="consultation-label">| CONSULTATION</p>
+        <h1>High Quality Solar<br>Energy Solutions</h1>
+        <p class="description">
+          Solar Powering Your Sustainable Scene is a vibrant and compelling phrase that conveys the idea of integrating
+          solar energy into various aspects of life to create a sustainable
+        </p>
+        <ul class="features">
+          <li><i class="fa-solid fa-circle-check"></i> The Environmental Benefits of Solar Energy</li>
+          <li><i class="fa-solid fa-circle-check"></i> Maximizing Your Renewable Investment</li>
+        </ul>
+        <button class="consultation-btn">GET CONSULTATION</button>
+      </div>
+    </div>
+  </div>
+
+ {% endblock %}

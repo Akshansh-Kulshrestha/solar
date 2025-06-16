@@ -1,0 +1,63 @@
+{% extends "solar/base.html" %}
+{% block contact %}
+
+        <div class="contact-us">
+            <h1>CONTACT US</h1>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="info-card">
+            <div class="icon-circle"><i class="fas fa-phone"></i></div>
+            <div class="info-title">Phone :</div>
+            <div class="info-detail">+123(254)658 58</div>
+        </div>
+
+        <div class="info-card">
+            <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+            <div class="info-title">Email Address :</div>
+            <div class="info-detail">help@gmail.com</div>
+        </div>
+
+        <div class="info-card">
+            <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-title">Location :</div>
+            <div class="info-detail">New Jersey 45463</div>
+        </div>
+
+        <div class="info-card">
+            <div class="icon-circle"><i class="fas fa-clock"></i></div>
+            <div class="info-title">Opening Hours :</div>
+            <div class="info-detail">Mon–Fri 09 am–05 PM</div>
+        </div>
+    </div>
+
+    <div class="map-container">
+
+        <form class="contact-form">
+            <h2>Get in Touch</h2>
+
+            <div class="form-row">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Subject" required>
+            </div>
+
+            <div class="form-row">
+                <textarea placeholder="Message" required></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    
+
+        <!-- <div class="map"> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3557.9416556964306!2d75.7319538!3d26.9053467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3fe5bb55f51%3A0x28ef04348dea4ee9!2sSudo%20Techlabs!5e0!3m2!1sen!2sin!4v1749799043213!5m2!1sen!2sin"></iframe>
+
+    </div>    <!-- </div> -->
+
+       {% endblock %}

@@ -1,0 +1,473 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Panel</title>
+    <link rel="stylesheet" href="{% static 'css/Index.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+  <div class="body">
+      <div class="main">
+        <div class="navbar1">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i> Linkedin</a>
+          </li>
+        </div>
+        <div class="navbar2">
+          <li>
+            <a href="#"><i class="fa-solid fa-message"></i> info@example.com</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i> 12/7 new town,245x
+              Street India</a
+            >
+          </li>
+        </div>
+        <!-- <div class="baar">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div> -->
+      </div>
+      <div class="btns">
+        <div class="logo">
+          <img
+            src="{% static 'images/iEnergy_logo.png' %}
+            "
+            alt="Loading..."
+          />
+        </div>
+        <div class="btn">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <!-- <li><a href="./pages/about.html">About</a></li> -->
+            <li class="dropdown">
+    <a href="{% url 'about' %}">About</a>
+    <ul class="dropdown-menu">
+      <li><a href="{% url 'team' %}" style="color: black;">Team</a></li>
+    </ul>
+  </li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'services' %}">Service</a></li>
+          <!-- <li><a href="./pages/team.html">Team</a></li> -->
+          <li><a href="{% url 'project' %}">Projects</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <button>Request a Quote</button>
+        </div>
+      </div>
+      <div class="solar">
+        <h2>
+          Solar Systems <br />
+          MarketPlace
+        </h2>
+        <p>
+          Practical renewable energy technology thatreduces costs and
+          helps the environment
+        </p>
+        <button>Descover More!</button>
+      </div>
+    </div>
+    <!-- 2 page -->
+    <div>
+      <div class="card-section">
+    <div class="card-green-card">
+      <img src="{% static 'images/img/domastic.png'%}" alt="Domestic Icon"/>
+      <h3>Domestic Installation</h3>
+      <p>Solar PV, Battery Storage, Heat Recovery Ventilation<br>Systems & EV Charging</p>
+    </div>
+    <div class="card-blue-card">
+      <img src="{% static 'images/img/comer.png' %}" alt="Commercial Icon"/>
+      <h3>Commercial Installation</h3>
+      <p>Solar PV, Battery Storage, Heat Recovery Ventilation<br> Systems & EV Charging</p>
+    </div>
+  </div>
+          
+
+     
+  <div class="welcome-section">
+    <div class="welcome-text">
+      <small>Welcome to Solar Power Save Energy</small>
+      <h1><u>Taking The Effort Out</u><br/>Of Business Energy</h1>
+     
+    </div>
+    <div class="signature-block">
+       <p>leading renewable energy solutions provider that is revolutionising and redefining the way sustainable energy sources are harnessed across the world. Present in 18 countries across Asia, Australia, Europe Africa and the Americas, Veztaz is powering.</p>
+      <img src="{% static 'images/img/signature.png'%}" alt="Signature" />
+      <h4>Alines Jannie</h4>
+      <small>Director of Renewable Group</small>
+    </div>
+  </div>
+
+</div>
+ <!-- 3 page -->
+<div class="images-section">
+    <div class="first-section">
+
+        <div class="first-1">
+          <img src="{% static 'images/img/batteryStorage_logo.png '%}" alt="">
+          <h3>Battery Storage</h3>
+        </div>
+        <div class="first-2">
+            <div class="first-last" style="background-image: url(https://www.solarquotes.com.au/blog/wp-content/uploads/2021/09/solar-inspection-testing.jpg); background-size: 100% 100%;">
+              <img src="{% static 'images/img/inverter_logo.png '%}" alt="">
+              <h3>Inverter</h3>
+            </div>
+            <div class="first-last">
+              <img src="{% static 'images/img/windKinetic_logo.png '%}" alt=""> 
+              <h3>Wind Kinetic</h3>
+            </div>
+        </div>
+    </div>
+    <div class="second-section">
+      <img src="{% static 'images/img/RenewableEnergy_logo.png '%}" alt="">
+      <h3>Renewable Enerygy</h3><p>Protecting Our Environment Needn't Cost The Earth</p> <button id="button">Discover More</button>
+    </div>
+</div>
+<!-- 4 page -->
+<div class="range">
+    <div id="range1">
+      <img src="{% static 'images/img/LVNetwork_logo.png '%}" alt=""><h2>10,000,000+</h2><p>Instances of fault activity captured <br> on LV networks</p></div>
+    <div id="range2"><img src="{% static 'images/img/TrainPantographs_logo.png '%}" alt=""><h2>3,500,000</h2><p>Train pantographs inspected <br> annually</p></div>
+    <div id="range3"><img src="{% static 'images/img/HoursOfLV_logo.png '%}" alt=""><h2>20,000,000+</h2><p>Hours of LV load profile data<br> captured and analysed</p></div>
+</div>
+<!-- 5 page -->
+ <div class="latest">
+    <p>RECENT PROJECTS</p>
+    <h1>Latest Installations</h1>
+</div>
+<div class="latest1">
+    <div id="develops">
+     <img src=" https://www.thermaxglobal.com/wp-content/uploads/2021/10/Solar-Blog-Image.jpg" alt="">
+    </div>
+    <div id="bishops">
+      <img src="https://earth.org/wp-content/uploads/2020/05/Webp.net-resizeimage-91.jpg" alt="">
+    </div>
+</div>
+<div class="latest2">
+    <div id="manages">
+        <div class="text-content">
+        <h3>Develops and Manages<br>Sustainable Infrastructure</h3>
+        <div id="span"><span class="kwp">250.43</span><span class="subtext"> KWP SYSTEM</span> <span><button class="plus-button"><i class="fa-solid fa-arrow-right"></i></button></span></div>
+      </div>
+      
+    </div>
+    <div id="rawstone">
+         <div class="text-content">
+        <h3>Bishop rawstorne academy- <br>leyland (bauder mounting)</h3>
+        <div id="span"><span class="kwp">250.43</span><span class="subtext"> KWP SYSTEM</span> <span><button class="plus-button"><i class="fa-solid fa-arrow-right"></i></button></span></div>
+      </div>
+    </div> 
+</div>
+
+<!-- 6 page -->
+<div class="container">
+  <!-- Left Column -->
+  <div class="left">
+    <h5>World Without Waste</h5>
+    <h1>Why Use iEnergy ?</h1>
+
+    <div class="feature">
+      <div class="feature-icon"><img src="{% static 'images/img/free&noObligation_logo.png '%}" alt=""></div>
+      <div class="feature-content">
+        <h3>Save Time</h3>
+        <p>Get up to 3 quotes from our selected suppliers by filling in only 1 form</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon"><img src="{% static 'images/img/saveMoney_logo.png '%}" alt=""></div>
+      <div class="feature-content">
+        <h3>Save Money</h3>
+        <p>Get up to 3 quotes from our selected suppliers by filling in only 1 form</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-icon"><img src="{% static 'images/img/saveTime_logo.png '%}" alt=""></div>
+      <div class="feature-content">
+        <h3>Free and No Obligation</h3>
+        <p>Get up to 3 quotes from our selected suppliers by filling in only 1 form</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right">
+    <div class="image-box">
+
+      <div class="play-button">▶</div>
+    </div>
+
+    <div class="contact-bar">
+      <div class="contact-item green">
+        <h4>Call for a quote:</h4>
+        <p>+92 1234 866 731</p>
+      </div>
+      <div class="contact-item white">
+        <h4>Email Address:</h4>
+        <p>username@domain.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 7 page -->
+<div class="section-title">
+    <h5>Process and the Solutions We Can Provide</h5>
+    <h1>What You Can Expect From Our<br>Sustainability Consultants</h1>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="step-badge">
+        <div  id="stepbadge1"></div>
+        <div id="stepbadge2"><h1>1</h1></div></div>
+      <h3>Book a Free Consultation</h3>
+      <p>Our mission is to provide clear, high quality and affordable ecological advice and services to public.</p>
+      <div class="icon"><img src="{% static 'images/img/bookConsult_logo.png '%}" alt=""></div>
+    </div>
+
+    <div class="card">
+      <div class="step-badge">
+        <div  id="stepbadge1"></div>
+        <div id="stepbadge2"><h1>2</h1></div></div>
+      <h3>Estimate the Calculation</h3>
+      <p>Our mission is to provide clear, high quality and affordable ecological advice and services to public.</p>
+      <div class="icon"><img src="{% static 'images/img/estimate_logo.png '%}" alt=""></div>
+    </div>
+
+    <div class="card">
+      <div class="step-badge">
+        <div  id="stepbadge1"></div>
+        <div id="stepbadge2"><h1>3</h1></div></div>
+      <h3>Hire us for Your Projects</h3>
+      <p>Our mission is to provide clear, high quality and affordable ecological advice and services to public.</p>
+      <div class="icon"><img src="{% static 'images/img/hireUs_logo.png '%}" alt=""></div>
+    </div>
+  </div>
+
+  <!-- 8 page -->
+  <div class="review-section">
+    <div class="review-left">
+      <img src="https://images.unsplash.com/photo-1570215171424-f74325192b55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI3fHx8ZW58MHx8fHx8" alt="Meeting" class="main-img">
+    </div>
+
+    <div class="review-right">
+      <h2>Client’s Reviews</h2>
+      <p>Cut down on all your work by collaborating with our Launch Pad team to get the framework of your online business up and running in no time.</p>
+
+      <div class="reviewer-info">
+        <div class="quote-icon">❝</div>
+        <div class="details">
+          <strong>Jeena</strong>
+          <span>sustainable energy owner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 page -->
+  <div class="Flexible">
+  <h4>PRICING PLANS</h4>
+  <h2>Effective & Flexible Pricing</h2>
+
+  <div class="pricing-container">
+    <!-- Solar -->
+    <div class="plan">
+      <img src="{% static 'images/img/solarEnergy_logo.png '%}" alt="">
+      <h3>SOLAR ENERGY</h3>
+      <div class="price">$90 <span style="font-size: 14px;">/Month</span></div>
+      <p>The Perfect Plan For Small Business</p>
+      <ul class="features">
+        <li><i class="fa-regular fa-square-check"></i>Built Using N-Type Mono</li>
+        <li><i class="fa-regular fa-square-check"></i>Crystalline Cell Materials</li>
+        <li><i class="fa-regular fa-square-check"></i>Reliability And Performance</li>
+      </ul>
+      <button class="button">Purchase Now</button>
+    </div>
+
+    <!-- Hydro -->
+    <div class="plan">
+      <img src="{% static 'images/img/hydroelect_logo.png '%}" alt="">
+      <h3>HYDROELECTRIC ENERGY</h3>
+      <div class="price">$50 <span style="font-size: 14px;">/Month</span></div>
+      <p>The Perfect Plan For Small Business</p>
+      <ul class="features">
+        <li><i class="fa-regular fa-square-check"></i>Built Using N-Type Mono</li>
+        <li><i class="fa-regular fa-square-check"></i>Crystalline Cell Materials</li>
+        <li><i class="fa-regular fa-square-check"></i>Reliability And Performance</li>
+      </ul>
+      <button class="button" style="background-color: #ff5c1b; color: white;">Purchase Now</button>
+    </div>
+
+    <!-- Wind -->
+    <div class="plan">
+      <img src="{% static 'images/img/windEnergy_logo.png '%}" alt="">
+      <h3>WIND ENERGY</h3>
+      <div class="price">$120 <span style="font-size: 14px;">/Month</span></div>
+      <p>The Perfect Plan For Small Business</p>
+      <ul class="features">
+        <li><i class="fa-regular fa-square-check"></i>Built Using N-Type Mono</li>
+        <li><i class="fa-regular fa-square-check"></i>Crystalline Cell Materials</li>
+        <li><i class="fa-regular fa-square-check"></i>Reliability And Performance</li>
+      </ul>
+      <button class="button">Purchase Now</button>
+    </div>
+  </div>
+</Flexible>
+
+<!-- 10 page -->
+<div class="quote-section">
+    <div class="quote-text">
+      <h4>Request a Quote</h4>
+      <h2>Talk About How We Can Help You Reduce Your Energy</h2>
+      <p>Costs and successfully manage your carbon emissions with investment-free solar technologies.</p>
+    </div>
+
+    <div class="quote-form">
+      <input type="text" placeholder="Complete Name">
+      <input type="email" placeholder="Email Address">
+      <input type="tel" placeholder="Phone No">
+      <textarea placeholder="Message"></textarea>
+      <button>Send Message</button>
+    </div>
+  </div>
+
+  <!-- 11 page -->
+  <div class="news-section">
+  <h4>Blog & Updates</h4>
+  <h2>Recent News</h2>
+
+  <div class="news-container">
+    <div class="news-card">
+      <img src="https://www.darwinrecruitment.com/wp-content/uploads/2023/11/From-sun-to-socket-understanding-the-solar-energy-value-chain-1.png" alt="news-1">
+      <span class="date">December 12, 2023</span>
+      <div class="meta">Design Process</div>
+      <div class="title">Solar Energy's Exceptional Synergies</div>
+      <div class="footer-1">
+        <div class="dot"></div> By Thomas Walkar &nbsp; • &nbsp; 14 Comment
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/052/536/229/non_2x/a-large-solar-panel-farm-at-sunset-the-sun-is-setting-behind-the-panels-and-the-sky-is-filled-with-clouds-photo.jpeg" alt="news-2">
+      <span class="date">December 12, 2023</span>
+      <div class="meta">Design Process</div>
+      <div class="title">Solar Energy’s Exceptional Synergies</div>
+      <div class="footer-1">
+        <div class="dot"></div> By Thomas Walkar &nbsp; • &nbsp; 14 Comment
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://sunapecopower.com/wp-content/uploads/2023/08/4.jpg" alt="news-3">
+      <span class="date">December 12, 2023</span>
+      <div class="meta">Design Process</div>
+      <div class="title">Solar Energy’s Exceptional Synergies</div>
+      <div class="footer-1">
+        <div class="dot"></div> By Thomas Walkar &nbsp; • &nbsp; 14 Comment
+      </div>
+    </div>
+  </div>
+
+  <div class="view-all">
+    <button>View All News</button>
+  </div>
+</div>
+
+<!-- 12 page -->
+ <div class="recent-news">
+  <h2>Partners and Sponsors</h2>
+
+  <div class="sponsors-container">
+    <div class="sponsor"><img src="{% static 'images/img/GreenEnergy_logo.png '%}" alt="Green Energy"></div>
+    <div class="sponsor"><img src="{% static 'images/img/smart_logo.png '%}" alt="Smart Energy"></div>
+    <div class="sponsor"><img src="{% static 'images/img/greenIdea_logo.png '%}" alt="Greenidea"></div>
+    <div class="sponsor"><img src="{% static 'images/img/electrical_logo.png '%}" alt="Electrical"></div>
+    <div class="sponsor"><img src="{% static 'images/img/safeEnergy_logo.png '%}" alt="Safenergy"></div>
+  </div>
+ </div> </div>
+
+
+ <div class="cta-section">
+            <div class="cta-text">
+                <h2>Harness the Sun<br>Get Solar Power Today!</h2>
+                <button class="cta-btn">START TODAY</button>
+                <div class="contact">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <p class="small-text">Need any help</p>
+                        <strong>+123 (548) 5256</strong>
+                    </div>
+                </div>
+            </div>
+            <img src="{% static 'images/img/image.png'%}" alt="Engineer Woman" />
+
+        </div>
+ <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3></h3>
+                    <p>8502 Preston Rd. Inglewood, Maine 98380 US</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Phone</h4>
+                    <p>+12(456)658 78</p>
+                    <p>+12(518)451 45</p>
+                    <h4>Email</h4>
+                    <p>support@gmail.com</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <p>Blog</p>
+                    <p>Testimonials</p>
+                    <p>Faqs</p>
+                    <p>Contact Us</p>
+                </div>
+
+                <div class="footer-col subscribe">
+                    <h4>Subscribe</h4>
+                    <input type="email" placeholder="Email Address">
+                    <button><i class="fa-solid fa-paper-plane"></i></button>
+                    <div class="terms">
+                        <input type="checkbox" id="agree">
+                        <label for="agree">I agree with the terms and conditions</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright 2025 – All Rights Reserved By</p>
+                <div class="footer-links">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy & Policy</a>
+                </div>
+            </div>
+        </footer>  
+
+
+  </body>
+</html>

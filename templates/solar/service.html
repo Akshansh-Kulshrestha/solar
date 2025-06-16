@@ -1,0 +1,53 @@
+{% extends "solar/base.html" %}
+{% load static %}
+{% block service %}
+    <div class="contact-us">
+      <h1>SERVICE</h1>
+    </div>
+  </div>
+  <!-- navbar closed -->
+
+  <div class="services-grid">
+    <div class="card1">
+      <div class="card">
+        <img src="{% static 'images/img/energy monitoring.png' %}" alt="Energy Monitoring">
+        <h3>Energy Monitoring</h3>
+        <p>Intelligent Energy Monitoring to Control Costs Effectively</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/img/wind.png' %}" alt="Wind Turbines">
+        <h3>Wind Turbines</h3>
+        <p>Wind turbines Powering a greener tomorrow effortlessly.</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/img/solar.png' %}" alt="Solar Maintenance">
+        <h3>Solar Maintenance</h3>
+        <p>Expert Solar Panel Maintenance for Maximum Energy Efficiency</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="card2">
+      <div class="card">
+        <img src="{% static 'images/img/panel.png' %}" alt="Panel Installation">
+        <h3>Panel Installation</h3>
+        <p>Panel Installation involves the professional installation</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/img/battery.png' %}" alt="Battery Solutions">
+        <h3>Battery Solutions</h3>
+        <p>Store Sunlight Effectively with Innovative Battery Tech</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/img/incentive.png' %}" alt="Incentives Guidance">
+        <h3>Incentives Guidance</h3>
+        <p>Navigate Solar Savings Current Incentives Explained</p>
+        <a href="#">READ MORE <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+{% endblock service %}
+ 

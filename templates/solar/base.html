@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Panel</title>
+  <link rel="stylesheet" href="{% static 'css/team.css'%}">
+  <link rel="stylesheet" href="{% static 'css/service.css'%}">
+  <link rel="stylesheet" href="{% static 'css/Index.css'%}">
+  <link rel="stylesheet" href="{% static 'css/about.css'%}">
+  <link rel="stylesheet" href="{% static 'css/bloge.css'%}">
+  <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+  <link rel="stylesheet" href="{% static 'css/projects.css'%}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+ <!-- <div class="body"> -->
+      <div class="main">
+        <div class="navbar1">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i> Linked In</a>
+          </li>
+        </div>
+        <div class="navbar2">
+          <li>
+            <a href="#"><i class="fa-solid fa-message"></i> info@example.com</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-location-dot"></i> 12/7 new town,245x
+              Street India</a
+            >
+          </li>
+        </div>
+      </div>
+      <div class="btns">
+        <div class="logo">
+          <img
+            src="{% static 'images\img\iEnergy_logo.png'%}
+            "
+            alt="Loading..."
+          />
+        </div>
+        <div class="btn">
+          <li><a href="{% url 'home' %}">Home</a></li>
+
+          <li class="dropdown">
+    <a href="{% url 'about' %}">About</a>
+    <ul class="dropdown-menu">
+      <li><a href="{% url 'team' %}" style="color: black;">Team</a></li>
+    </ul>
+  </li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'services' %}">Service</a></li>
+          <!-- <li><a href="./team.html">Team</a></li> -->
+          <li><a href="{% url 'project' %}">Projects</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <button>Request a Quote</button>
+        </div>
+      </div>
+  <!-- navbar closed -->
+{% block service %}{% endblock %}
+{% block team %}{% endblock team %}
+{% block about %}{% endblock about %}
+{% block blog %}{% endblock blog %}
+{% block contact %}{% endblock contact %}
+{% block project %}{% endblock project %}
+
+
+  <!-- footer -->
+  <div class="cta-section">
+    <div class="cta-text">
+      <h2>Harness the Sun<br>Get Solar Power Today!</h2>
+      <button class="cta-btn">START TODAY</button>
+      <div class="contact">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div>
+          <p class="small-text">Need any help</p>
+          <strong>+123 (548) 5256</strong>
+        </div>
+      </div>
+    </div>
+    <img src="{% static 'images/img/image.png'%}" alt="Engineer Woman" />
+    </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3></h3>
+        <p>8502 Preston Rd. Inglewood, Maine 98380 US</p>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Phone</h4>
+        <p>+12(456)658 78</p>
+        <p>+12(518)451 45</p>
+        <h4>Email</h4>
+        <p>support@gmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <p>Blog</p>
+        <p>Testimonials</p>
+        <p>Faqs</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="footer-col subscribe">
+        <h4>Subscribe</h4>
+        <input type="email" placeholder="Email Address">
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+        <div class="terms">
+          <input type="checkbox" id="agree">
+          <label for="agree">I agree with the terms and conditions</label>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright 2025 – All Rights Reserved By</p>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy & Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

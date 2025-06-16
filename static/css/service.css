@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-us h1{
+
+  color:black;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5vh;
+
+}
+
+
+
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  text-align: left;
+  background: #fff;
+  width: 20%;
+}
+
+.card1 , .card2{
+    display: flex;
+    justify-content: center;
+   
+    gap: 3vh;
+    margin-bottom: 3vh;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 10vh;
+  height: 10vh;
+  margin-left: 13vh;
+  margin-top: 1vh;
+
+  
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-top: -15px;
+  color: #111;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+ 
+}
+
+.card a {
+  color: #34a853;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.card a i {
+  margin-left: 5px;
+}
+
+
+
+
+/* Make card1/card2 wrap and center on small screens */
+@media (max-width: 1024px) {
+  .card1,
+  .card2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 40%; /* 2 cards per row on tablet */
+  }
+
+  .card img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .card h3,
+  .card p,
+  .card a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Full width cards on mobile */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-us h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    width: 8vh;
+    height: 8vh;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p,
+  .card a {
+    font-size: 13px;
+  }
+}

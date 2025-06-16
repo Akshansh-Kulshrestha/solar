@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-us h1{
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 3vh;
+
+}
+
+
+.team-section {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-subtitle {
+  color: #43b649;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 50px;
+  font-weight: 700;
+  /* color: #222; */
+  margin-bottom: 40px;
+}
+
+.team-grid1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+
+.team-grid2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+
+}
+
+.team-member {
+  position: relative;
+  /* width: 70vh; */
+  flex: 1 1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.team-member img {
+  width: 100%;
+  /* height: auto; */
+  display: block;
+}
+
+.member-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  background-color: #43b649;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.member-info i {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.member-info h3 {
+  margin: 5px 0 2px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.member-info p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* For tablets and medium screens */
+@media (max-width: 1024px) {
+  .team-member {
+    flex: 0 0 45%; /* Two in a row */
+    max-width: 45%;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .team-member {
+    flex: 0 0 100%; /* One per row */
+    max-width: 90%;
+  }
+
+  .member-info {
+    padding: 15px 10px;
+  }
+
+  .member-info h3 {
+    font-size: 15px;
+  }
+
+  .member-info p {
+    font-size: 13px;
+  }
+}
+
+/* For extra-small phones */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .member-info h3 {
+    font-size: 14px;
+  }
+
+  .member-info p {
+    font-size: 12px;
+  }
+}
+
